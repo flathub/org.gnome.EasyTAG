@@ -102,3 +102,5 @@ modules:
         path: appdata-screenshot.patch
       - type: patch
         path: appdata-rating.patch
+      - type: patch
+        path: easytag-Revert-Do-not-maintain-an-open-handle-on-Ogg-files.patch
