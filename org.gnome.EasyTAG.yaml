@@ -103,4 +103,10 @@ modules:
       - type: patch
         path: appdata-rating.patch
       - type: patch
-        path: easytag-Revert-Do-not-maintain-an-open-handle-on-Ogg-files.patch
+        path: appdata-devinfo.patch
+      - type: patch
+        path: easytag-fix-ogg-corruption-prereq1.patch
+      - type: patch
+        path: easytag-fix-ogg-corruption-prereq2.patch
+      - type: patch
+        path: easytag-fix-ogg-corruption.patch
