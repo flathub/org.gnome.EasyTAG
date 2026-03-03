@@ -1,6 +1,6 @@
 id: org.gnome.EasyTAG
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '49'
 sdk: org.gnome.Sdk
 command: easytag
 finish-args:
@@ -76,6 +76,8 @@ modules:
 
   - name: taglib
     buildsystem: cmake
+    config-opts:
+      - -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     cleanup:
       - /bin
     sources:
@@ -94,6 +96,8 @@ modules:
   - name: easytag
     config-opts:
       - --disable-Werror
+    build-options:
+      cflags: -std=gnu11
     sources:
       - type: archive
         url: https://download.gnome.org/sources/easytag/2.4/easytag-2.4.3.tar.xz
