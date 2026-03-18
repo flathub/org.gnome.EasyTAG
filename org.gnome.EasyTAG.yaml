@@ -31,19 +31,19 @@ modules:
         url: http://downloads.sourceforge.net/id3lib/id3lib-3.8.3.tar.gz
         sha512: 3787e261f86933c1c2f2bff2c4b349b42f5d8636e489e4f39f9d75e6dfbdc79b87009a0f4ce4b786f2fb3dbc01ca9d56c4112095b46244f897e6c9a28573adaf
       - type: patch
-        path: id3lib-3.8.3-autoreconf.patch
+        path: patches/id3lib-3.8.3-autoreconf.patch
       - type: patch
-        path: id3lib-3.8.3-io_helpers-163101.patch
+        path: patches/id3lib-3.8.3-io_helpers-163101.patch
       - type: patch
-        path: id3lib-3.8.3-mkstemp.patch
+        path: patches/id3lib-3.8.3-mkstemp.patch
       - type: patch
-        path: id3lib-3.8.3-includes.patch
+        path: patches/id3lib-3.8.3-includes.patch
       - type: patch
-        path: id3lib-vbr_buffer_overflow.patch
+        path: patches/id3lib-vbr_buffer_overflow.patch
       - type: patch
-        path: id3lib-3.8.3-missing-nullpointer-check.patch
+        path: patches/id3lib-3.8.3-missing-nullpointer-check.patch
       - type: patch
-        path: id3lib-3.8.3-fix-utf16-stringlists.patch
+        path: patches/id3lib-3.8.3-fix-utf16-stringlists.patch
       - type: file
         path: id3lib-config.guess
         dest-filename: config.guess
@@ -57,19 +57,19 @@ modules:
         url: http://downloads.sourceforge.net/mad/libid3tag-0.15.1b.tar.gz
         sha512: ade7ce2a43c3646b4c9fdc642095174b9d4938b078b205cd40906d525acd17e87ad76064054a961f391edcba6495441450af2f68be69f116549ca666b069e6d3
       - type: patch
-        path: libid3tag-0.15.1b-fix_overflow.patch
+        path: patches/libid3tag-0.15.1b-fix_overflow.patch
         strip-components: 0
       - type: patch
-        path: libid3tag-0.15.1b-handle-unknown-encoding.patch
+        path: patches/libid3tag-0.15.1b-handle-unknown-encoding.patch
       - type: patch
-        path: libid3tag-0.15.1b-id3v1-zero-padding.patch
+        path: patches/libid3tag-0.15.1b-id3v1-zero-padding.patch
       - type: patch
-        path: libid3tag-0.15.1b-id3v2-endless-loop.patch
+        path: patches/libid3tag-0.15.1b-id3v2-endless-loop.patch
         strip-components: 0
       - type: patch
-        path: libid3tag-0.15.1b-pkgconfig.patch
+        path: patches/libid3tag-0.15.1b-pkgconfig.patch
       - type: patch
-        path: libid3tag-0.15.1b-gperf-size_t.patch
+        path: patches/libid3tag-0.15.1b-gperf-size_t.patch
       - type: script
         commands:
           - autoreconf --force --install
@@ -103,10 +103,10 @@ modules:
         url: https://download.gnome.org/sources/easytag/2.4/easytag-2.4.3.tar.xz
         sha512: ef596341772ce7da3b7feec2c82a20ca29d25c2496074c469be5b8dd75d2b2718e689310e0d61de53bc29a4f54ce9f853a336e1a35076046fd107afd28699087
       - type: patch
-        path: appdata.patch
+        path: patches/appdata.patch
       - type: patch
-        path: easytag-fix-ogg-corruption-prereq1.patch
+        path: patches/easytag-fix-ogg-corruption-prereq1.patch
       - type: patch
-        path: easytag-fix-ogg-corruption-prereq2.patch
+        path: patches/easytag-fix-ogg-corruption-prereq2.patch
       - type: patch
-        path: easytag-fix-ogg-corruption.patch
+        path: patches/easytag-fix-ogg-corruption.patch
