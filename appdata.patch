@@ -9,10 +9,11 @@ diff --color -ura easytag-2.4.3/data/easytag.appdata.xml.in easytag-2.4.3-patche
      <description>
          <_p>View and edit tags for MP3, MP2, MP4/AAC, FLAC, Ogg Opus, Ogg
          Speex, Ogg Vorbis, MusePack, Monkey's Audio and WavPack files.</_p>
-@@ -19,15 +20,21 @@
+@@ -19,15 +20,22 @@
      <url type="homepage">https://wiki.gnome.org/Apps/EasyTAG</url>
      <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=easytag</url>
      <url type="help">https://help.gnome.org/users/easytag/stable/</url>
++    <url type="vcs-browser">https://gitlab.gnome.org/GNOME/easytag</url>
 +    <launchable type="desktop-id">org.gnome.EasyTAG.desktop</launchable>
      <screenshots>
          <screenshot type="default">
